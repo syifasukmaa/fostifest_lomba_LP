@@ -1,0 +1,791 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+h2 {
+  font-size: 26px;
+  color: #3d3e48;
+}
+
+h3 {
+  font-size: 16px;
+  color: #295943;
+}
+
+header .navbar a {
+  color: #fff;
+}
+header .navbar-brand {
+  padding-left: 20px;
+  font-size: 24px;
+}
+header .navbar-brand:hover {
+  transform: scale(1.05);
+}
+header .navbar-toggler {
+  padding-right: 20px;
+  border: transparent;
+}
+header .navbar-toggler:focus {
+  border: transparent;
+  outline: none;
+  box-shadow: none;
+}
+header .navbar-scrolled {
+  backdrop-filter: blur(5px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+header .navbar .active {
+  border-radius: 5px;
+  padding: 5px 0;
+  color: black;
+}
+header .navbar .nav-item {
+  font-size: 18px;
+  padding: 20px 0;
+  transition: 0.3s ease all;
+}
+header .navbar .nav-item:hover {
+  transform: scale(1.05);
+}
+header .navbar .offcanvas.show,
+header .navbar .offcanvas.showing {
+  width: 300px;
+  height: auto;
+}
+header .navbar .offcanvas.show .nav-link {
+  color: black !important;
+}
+header .navbar .offcanvas-backdrop {
+  position: static;
+}
+header .navbar .offcanvas-backdrop.show {
+  opacity: 0;
+}
+header .hero {
+  padding-bottom: 30px;
+}
+header .hero .hero__image {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/assets/img/hero1.jpg");
+  height: 100vh;
+  align-self: center;
+  filter: brightness(50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+}
+header .hero__text {
+  z-index: 999;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .hero__text .hero__heading {
+  font-size: 40px;
+}
+header .hero__text .hero__desc {
+  font-size: 16px;
+}
+
+#services {
+  padding: 50px 15px;
+}
+#services .services__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#services .services__body {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  grid-gap: 15px;
+  padding: 0 50px;
+}
+#services .services__body .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#services .services__body .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#services .services__body .card-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #3d3e48;
+  margin-bottom: 15px;
+}
+#services .services__body .card-text {
+  text-align: center;
+}
+#services .services__body .card-img-top {
+  margin-top: 10px;
+  padding: 10px 0;
+  width: 20%;
+}
+
+#topDestination {
+  background-color: #defdef;
+  padding: 50px 15px;
+}
+#topDestination .disc__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#topDestination .disc__body {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  grid-gap: 15px;
+}
+#topDestination .disc__body a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+}
+#topDestination .disc__body .card {
+  width: 100%;
+  box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+#topDestination .disc__body .card-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #3d3e48;
+}
+#topDestination .disc__body .card-img-top {
+  padding: 10px;
+}
+#topDestination .disc__body .card-text-bottom {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  color: #3d3e48;
+}
+#topDestination .disc__body .card-text-bottom > p {
+  color: #295943;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+#topDestination .disc__body .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+#topDestination button {
+  background-color: #295943;
+  padding: 10px 35px;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  margin-top: 30px;
+}
+#topDestination button:hover {
+  background-color: #43b97f;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#testimonial {
+  width: 100%;
+  padding: 50px 15px 0 15px;
+}
+#testimonial .testi__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#testimonial .testi__body {
+  color: #000;
+}
+#testimonial .testi__body .carousel {
+  background-color: var(--young-blue);
+  box-shadow: var(--low-shadow);
+  margin: 16px 0 40px 0;
+}
+#testimonial .testi__body .carousel .all--item {
+  padding: 50px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#testimonial .testi__body .carousel .img--carousel {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+#testimonial .testi__body .carousel .carousel--caption {
+  font-size: 14px;
+}
+#testimonial .testi__body .carousel .carousel--star img {
+  padding: 0;
+  margin: 0;
+}
+#testimonial .testi__body .carousel .carousel--desc {
+  font-weight: 300;
+  line-height: 20px;
+}
+#testimonial .testi__body .carousel .carousel--name {
+  font-weight: 400;
+  line-height: 20px;
+}
+#testimonial .testi__body .carousel .carousel-control-next,
+#testimonial .testi__body .carousel .carousel-control-prev {
+  bottom: 55%;
+}
+
+#contact {
+  background-color: #defdef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+#contact .contact__container {
+  padding: 50px 50px;
+  width: 80%;
+  background-color: #9fffec;
+  border-radius: 129px 20px 20px 20px;
+  position: relative;
+}
+#contact .contact__container img {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  width: 15%;
+}
+#contact .contact__container .contact__body {
+  display: flex;
+  flex-direction: column;
+}
+#contact .contact__container .contact__body .contact__body__desc {
+  color: var(--TEXT-CLR, #5e6282);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+#contact .contact__container .contact__body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact .contact__container .contact__body form .container__input {
+  position: relative;
+}
+#contact .contact__container .contact__body form .container__input .bi-envelope {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+#contact .contact__container .contact__body form .container__input input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 8px 40px;
+}
+#contact .contact__container .contact__body form .container__input ::placeholder {
+  padding: 30px;
+}
+#contact .contact__container .contact__body form .btn {
+  width: 50%;
+  transition: all 0.3s ease 0s;
+}
+#contact .contact__container .contact__body form .btn:hover {
+  background-color: #43b97f;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#footer .row {
+  width: 50%;
+}
+#footer .d-flex {
+  width: 80%;
+}
+
+#biodata {
+  margin: 20px 0;
+}
+#biodata .biodata__heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+#biodata .biodata {
+  width: 100%;
+  padding: 0 50px 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#biodata .biodata .biodata__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#biodata .biodata .biodata__desc .private {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 18px;
+}
+#biodata .biodata .biodata__desc .private > p:first-child {
+  font-weight: 700;
+}
+#biodata .biodata .biodata__desc .socialmedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  border: 2px solid #295943;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+#biodata .biodata .biodata__desc .socialmedia .icon {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+}
+#biodata .biodata .biodata__desc .socialmedia .icon i {
+  font-size: 20px;
+  color: #295943;
+}
+#biodata .biodata .biodata__desc .socialmedia .icon p {
+  color: black;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+#biodata .biodata .clip-image {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/sipa.jpg");
+  background-position: center;
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation: moveUpDown 2s infinite;
+}
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .navbar a {
+    color: #fff;
+  }
+  header .navbar .offcanvas.show,
+  header .navbar .offcanvas.showing {
+    width: 280px;
+  }
+  header .hero__text {
+    width: 80%;
+  }
+  header .hero__text .hero__desc {
+    width: 90%;
+    font-size: 16px;
+  }
+  #services .services__body {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 80px;
+  }
+  #services .services__body .card-img-top {
+    width: 20%;
+  }
+  #topDestination {
+    padding: 50px 25px 25px 25px;
+  }
+  #topDestination .disc__body {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+  #topDestination .disc__body a {
+    text-decoration: none;
+  }
+  #topDestination .disc__body .card {
+    box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+  }
+  #topDestination .disc__body .card-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #3d3e48;
+  }
+  #topDestination .disc__body .card-img-top {
+    padding: 10px;
+  }
+  #topDestination .disc__body .card-text-bottom {
+    margin-top: 22px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    color: #3d3e48;
+  }
+  #topDestination .disc__body .card-text-bottom > p {
+    color: #295943;
+    font-weight: 700;
+  }
+  #topDestination .btn__discover {
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+  #contact .contact__container {
+    position: relative;
+  }
+  #contact .contact__container img {
+    position: absolute;
+    top: -10px;
+    right: -25px;
+    width: 10%;
+  }
+  #contact .contact__container .contact__body {
+    width: 100%;
+  }
+  #contact .contact__container .contact__body .contact__body__desc {
+    font-size: 19px;
+    padding: 0 50px;
+    line-height: 30px;
+  }
+  #contact .contact__container .contact__body form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #contact .contact__container .contact__body form .container__input {
+    position: relative;
+  }
+  #contact .contact__container .contact__body form .container__input .bi-envelope {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+  }
+  #contact .contact__container .contact__body form .container__input input {
+    margin-top: 20px;
+  }
+  #contact .contact__container .contact__body form .btn {
+    width: 20%;
+    margin-left: 10px;
+    font-size: 14px;
+    padding: 9px 0;
+  }
+  #footer .container {
+    margin: 0 50px;
+  }
+  #footer .row {
+    width: 100%;
+  }
+  #footer .d-flex {
+    width: 100%;
+  }
+  #biodata {
+    margin: 20px 0;
+  }
+  #biodata .biodata__heading {
+    margin-bottom: 40px;
+  }
+  #biodata .biodata {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #biodata .biodata .biodata__desc .private > p:first-child {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 991px) {
+  header .navbar-brand {
+    font-size: 32px;
+  }
+  header .navbar .nav-item {
+    font-size: 16px;
+    padding: 0 8px;
+  }
+  header .navbar .nav-item a {
+    color: #fff !important;
+  }
+  header .hero__text {
+    width: 70%;
+  }
+  header .hero__text .hero__desc {
+    width: 82%;
+    font-size: 16px;
+  }
+  #services .services__body {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 50px;
+  }
+  #services .services__body .card-title {
+    text-align: center;
+  }
+  #services .services__body .card-text {
+    text-align: center;
+  }
+  #services .services__body .card-img-top {
+    width: 30%;
+    padding-bottom: 10px;
+  }
+  #topDestination {
+    padding: 60px 55px 25px 55px;
+  }
+  #topDestination .container-fluid {
+    padding: 0 30px;
+  }
+  #topDestination .disc__body {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+  #topDestination .disc__body a {
+    text-decoration: none;
+  }
+  #topDestination .disc__body .card {
+    box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+  }
+  #topDestination .disc__body .card-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #3d3e48;
+  }
+  #topDestination .disc__body .card-img-top {
+    padding: 10px;
+  }
+  #topDestination .disc__body .card-text-bottom {
+    margin-top: 22px;
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #3d3e48;
+  }
+  #topDestination .disc__body .card-text-bottom > p {
+    color: #295943;
+    font-weight: 700;
+    padding-bottom: 0;
+  }
+  #testimonial .testi__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #testimonial .testi__body .carousel {
+    margin: 20px 80px 0 80px;
+    padding-bottom: 60px;
+  }
+  #testimonial .testi__body .carousel .all--item {
+    flex-direction: row;
+    padding: 0 120px;
+    margin-top: 50px;
+  }
+  #testimonial .testi__body .carousel .img--carousel {
+    margin-right: 40px;
+    width: 130px;
+    object-fit: cover;
+  }
+  #testimonial .testi__body .carousel .carousel--caption {
+    margin-top: 64px;
+    margin-bottom: 69px;
+  }
+  #testimonial .testi__body .carousel .carousel-control-next,
+  #testimonial .testi__body .carousel .carousel-control-prev {
+    bottom: -10%;
+  }
+  #testimonial .testi__body .carousel .carousel--desc {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #testimonial .testi__body .carousel .carousel--name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  #contact .contact__container {
+    width: 65%;
+    position: relative;
+    padding: 35px;
+  }
+  #contact .contact__container img {
+    position: absolute;
+    top: -10px;
+    right: -25px;
+    width: 8%;
+  }
+  #contact .contact__container .contact__body .contact__body__desc {
+    font-size: 24px;
+    padding: 0 40px;
+    line-height: 40px;
+  }
+  #contact .contact__container .contact__body form .container__input {
+    position: relative;
+  }
+  #contact .contact__container .contact__body form .container__input .bi-envelope {
+    position: absolute;
+    top: 33px;
+    left: 15px;
+    font-size: 20px;
+  }
+  #contact .contact__container .contact__body form .container__input input {
+    margin-top: 20px;
+    padding: 15px 50px;
+  }
+  #contact .contact__container .contact__body form .container__input ::placeholder {
+    padding: 30px;
+    font-size: 18px;
+  }
+  #contact .contact__container .contact__body form .btn {
+    width: 20%;
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 13px 0;
+  }
+  #biodata {
+    margin: 20px 0;
+  }
+  #biodata .biodata__heading {
+    margin-bottom: 50px;
+  }
+  #biodata .biodata {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  #biodata .biodata .biodata__desc {
+    flex-direction: column;
+  }
+  #biodata .biodata .biodata__desc .private {
+    justify-content: flex-start;
+    line-height: 20px;
+  }
+  #biodata .biodata .biodata__desc .private > p {
+    font-size: 18px;
+  }
+  #biodata .biodata .biodata__desc .private > p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  #footer {
+    background-color: #295943;
+  }
+  #footer .container {
+    margin: 0 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #services .services__body {
+    padding: 0 120px;
+  }
+  #services .services__body .card-img-top {
+    width: 30%;
+  }
+  #topDestination .container-fluid {
+    padding: 0 50px;
+  }
+  #topDestination .disc__body {
+    grid-column-gap: 0px;
+    grid-gap: 15px;
+  }
+  #topDestination .disc__body .card {
+    box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.25);
+  }
+  #topDestination .disc__body .card-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #3d3e48;
+  }
+  #topDestination .disc__body .card-text-bottom {
+    margin-top: 22px;
+    color: #3d3e48;
+  }
+  #topDestination .disc__body .card-text-bottom > p {
+    color: #295943;
+    font-weight: 700;
+  }
+  #contact .contact__container {
+    position: relative;
+  }
+  #contact .contact__container img {
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    width: 6%;
+  }
+  #contact .contact__container .contact__body .contact__body__desc {
+    font-size: 24px;
+    padding: 0 100px;
+    line-height: 40px;
+  }
+  #contact .contact__container .contact__body form .container__input {
+    position: relative;
+    width: 40%;
+  }
+  #contact .contact__container .contact__body form .container__input .bi-envelope {
+    position: absolute;
+    top: 33px;
+    left: 15px;
+    font-size: 20px;
+  }
+  #contact .contact__container .contact__body form .container__input input {
+    margin-top: 20px;
+    padding: 15px 45px;
+  }
+  #contact .contact__container .contact__body form .container__input ::placeholder {
+    padding: 30px;
+    font-size: 18px;
+  }
+  #contact .contact__container .contact__body form .btn {
+    width: 15%;
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 13px 0;
+  }
+  #footer .container {
+    margin-left: 70px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
